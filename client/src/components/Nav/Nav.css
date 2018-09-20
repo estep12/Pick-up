@@ -1,6 +1,7 @@
 .navbar {
     background-color: red;
-    color: white!important;
+    margin-bottom: 50px;
+    height: 80px;
 }
 
 .dropdown {
@@ -9,7 +10,9 @@
 
 #brand {
     color: white;
-    margin-left: 107%;
+    margin-left: 65%;
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
 }
 
 i {
