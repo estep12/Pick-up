@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from './components//Home/Home.js'
+import Main from './components/Main/Main.js'
 import Nav from './components/Nav/Nav.js'
-//import Footer from './Footer/Footer.js'
+import Header from './components/Header/Header.js'
+import Footer from './components/Footer/Footer.js'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Nav/>
-        <Home />
-        {/* <Footer /> */}
+          <div className="container">
+            <Header />
+            <Main />
+          </div>
+        <Footer />
       </div>
     );
   }
