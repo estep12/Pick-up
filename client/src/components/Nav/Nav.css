@@ -1,0 +1,17 @@
+.navbar {
+    background-color: red;
+    color: white!important;
+}
+
+.dropdown {
+    list-style: none;
+}
+
+#brand {
+    color: white;
+    margin-left: 107%;
+}
+
+i {
+    color: white;
+}
