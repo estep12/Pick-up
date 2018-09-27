@@ -12,7 +12,7 @@ class Nav extends Component {
                     </div>
                     <div className="navbar-right">
                     <li className="dropdown">
-                        <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-align-justify"></i></a>
+                        <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i className="fas fa-align-justify"></i></a>
                     <ul className="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
