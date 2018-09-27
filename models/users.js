@@ -11,6 +11,10 @@ const userSchema = new Schema ({
         type: String,
         required: [true]
     },
+
+    phoneNumber: {
+        type: Number
+    }
 },
 
 {timestamps: true});
