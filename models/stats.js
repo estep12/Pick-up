@@ -35,7 +35,9 @@ const statsSchema = new Schema ({
     loses: {
         type: Number,
         default: 0
-    }
+    },
+
+    users: [{type: Schema.Types.ObjectId, ref: "User"}]
 },
 
 { timestamps: true });
