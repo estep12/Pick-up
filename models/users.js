@@ -14,7 +14,9 @@ const userSchema = new Schema ({
 
     phoneNumber: {
         type: Number
-    }
+    },
+
+    stats: [{type: Schema.Types.ObjectId, ref: "Stats"}]
 },
 
 {timestamps: true});
