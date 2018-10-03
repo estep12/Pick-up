@@ -8,7 +8,9 @@ const gameSchema = new Schema ({
         type: Number,
         default: 0,
         required: [true]
-    }
+    },
+
+    user: {type: Schema.Types.ObjectId, ref: "User"}
 
 },
 {timestamps: true });
