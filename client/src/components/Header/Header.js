@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <div class="page-header">
-                <h1>Add a Player</h1>
+                <h1>New Game</h1>
             </div>
         )
     }
