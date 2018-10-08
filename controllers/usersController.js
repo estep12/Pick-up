@@ -13,8 +13,8 @@ module.exports = {
         db.User
         findById(req.params.id)
         .populate({
-            path: "stats",
-            select: "points"
+            path: 'stats',
+            select: 'points'
         })
         .then(dBModel => res.json(dBModel))
         .catch(err => res.status(422).json(err));
