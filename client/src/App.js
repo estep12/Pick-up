@@ -16,7 +16,7 @@ class App extends Component {
         <Nav/>
           <div className="container">
             <Header />
-            <Game />
+            <Main />
           </div>
         <Footer />
       </div>

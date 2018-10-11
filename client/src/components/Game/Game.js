@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+    Route,
+    NavLink,
+    HashRouter
+  } from "react-router-dom";
+import Main from '../Main/Main.js' 
 import './Game.css';
 
 class Game extends Component {
