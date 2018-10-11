@@ -11,10 +11,10 @@ module.exports = {
     findById: (req, res) => {
         db.Stats
         find(req.params.id)
-        .populate({
-            path: 'users',
-            select: 'userName'
-        })
+        // .populate({
+        //     path: 'users',
+        //     select: 'userName'
+        // })
         .then(dBModel => res.json(dBModel))
         .catch(err => res.status(422).json(err));
     },
