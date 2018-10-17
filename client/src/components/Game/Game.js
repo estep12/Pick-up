@@ -4,7 +4,7 @@ import {
     NavLink,
     HashRouter
   } from "react-router-dom";
-import Main from '../Main/Main.js' 
+import Home from '../Home/Home.js' 
 import './Game.css';
 
 class Game extends Component {
