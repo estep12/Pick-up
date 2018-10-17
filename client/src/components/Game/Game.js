@@ -13,10 +13,10 @@ class Game extends Component {
         return (
         <div>
         <div>
-            <h1>Team 1</h1>
+            <h2>Team 1</h2>
                 <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Large button
+                    <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Player 1
                     </button>
                         <div class="dropdown-menu">
                         ...
@@ -24,7 +24,7 @@ class Game extends Component {
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Large button
+                    Player 2
                     </button>
                         <div class="dropdown-menu">
                         ...
@@ -32,7 +32,7 @@ class Game extends Component {
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Large button
+                    Player 3
                     </button>
                         <div class="dropdown-menu">
                         ...
@@ -40,7 +40,7 @@ class Game extends Component {
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Large button
+                    Player 4
                     </button>
                         <div class="dropdown-menu">
                         ...
@@ -48,7 +48,7 @@ class Game extends Component {
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Large button
+                    Player 5
                     </button>
                         <div class="dropdown-menu">
                         ...
@@ -57,10 +57,10 @@ class Game extends Component {
         </div>
 
         <div>
-        <h1>Team 2</h1>
+        <h2>Team 2</h2>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Large button
+                Player 1
                 </button>
                     <div class="dropdown-menu">
                     ...
@@ -68,7 +68,7 @@ class Game extends Component {
             </div>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Large button
+                Player 2
                 </button>
                     <div class="dropdown-menu">
                     ...
@@ -76,7 +76,7 @@ class Game extends Component {
             </div>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Large button
+                Player 3
                 </button>
                     <div class="dropdown-menu">
                     ...
@@ -84,7 +84,7 @@ class Game extends Component {
             </div>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Large button
+                Player 4
                 </button>
                     <div class="dropdown-menu">
                     ...
@@ -92,13 +92,14 @@ class Game extends Component {
             </div>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Large button
+                Player 5
                 </button>
                     <div class="dropdown-menu">
                     ...
                     </div>
             </div>
     </div>
+        <button type="submit" id="start-game" class="btn btn-primary">Start Game</button>
     </div>
         )
     }
