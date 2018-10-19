@@ -12,7 +12,7 @@ class Main extends Component {
             <div>
                 <button type="button" className="btn btn-default"><Link to="/newgame">New Game</Link></button>
                 <button type="button" className="btn btn-default"><Link to="/player">Add Player</Link></button>
-                <button type="button" className="btn btn-default"><Link to="./components/Leaderboard">Leaderboard</Link></button>
+                <button type="button" className="btn btn-default"><Link to="/leaderboard">Leaderboard</Link></button>
             </div>
         )
     }
