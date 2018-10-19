@@ -9,7 +9,14 @@ class Player extends Component {
             <form>
                 <div className="form-group">
                     <label for="firstName">First Name</label>
-                    <input type="text" className="form-control form-control-lg" id="firstName" aria-describedby="firstNameInput" placeholder=""/>
+                    <input 
+                        type="text" 
+                        value = {props.firstName}
+                        name= "firstName"
+                        className="form-control form-control-lg" 
+                        id="firstName" 
+                        aria-describedby="firstNameInput" 
+                        placeholder=""/>
                 </div>
                 <div className="form-group">
                     <label for="lastName">Last Name</label>
