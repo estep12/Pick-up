@@ -11,7 +11,7 @@ class Player extends Component {
                     <label for="firstName">First Name</label>
                     <input 
                         type="text" 
-                        value = {props.firstName}
+                        // value = {props.firstName}
                         name= "firstName"
                         className="form-control form-control-lg" 
                         id="firstName" 
