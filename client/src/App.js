@@ -27,18 +27,23 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Main";
-import Game from "./components/Game";
-import Player from "./components/Player";
+import Game from "./pages/Game";
+import Player from "./pages/Player";
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 import './App.css';
 
 const App = () => (
   <Router>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path='/newgame' component={Game}/>
-      <Route path='/player' component={Player}/>
-     
-    </Switch>
+    <div>
+      <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path='/newgame' component={Game}/>
+          <Route path='/player' component={Player}/>
+        </Switch>
+      <Footer />
+    </div>
   </Router>
 )
 
