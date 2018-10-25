@@ -8,7 +8,7 @@ class Player extends Component {
         return (
             <form>
                 <div className="form-group">
-                    <label for="firstName">First Name</label>
+                    <label htmlFor="firstName">First Name</label>
                     <input 
                         type="text" 
                         // value = {props.firstName}
@@ -19,12 +19,22 @@ class Player extends Component {
                         placeholder=""/>
                 </div>
                 <div className="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" className="form-control form-control-lg" id="lastName" aria-describedby="lastNameInput" placeholder=""/>
+                    <label htmlFor="lastName">Last Name</label>
+                    <input 
+                        type="text" 
+                        className="form-control form-control-lg" 
+                        id="lastName" 
+                        aria-describedby="lastNameInput" 
+                        placeholder=""/>
                 </div>
                 <div className="form-group">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" className="form-control form-control-lg" id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder=""/>
+                    <label htmlFor="phoneNumber">Phone Number</label>
+                    <input 
+                        type="text" 
+                        className="form-control form-control-lg" 
+                        id="phoneNumber" 
+                        aria-describedby="phoneNumberHelp" 
+                        placeholder=""/>
                     <small id="phoneNumberHelp" class="form-text text-muted">For getting the squad together!</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Add Player</button>
