@@ -33,6 +33,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import './App.css';
 
+
 const App = () => (
   <Router>
     <div>
@@ -46,5 +47,20 @@ const App = () => (
     </div>
   </Router>
 )
+
+// class App extends Component {
+ // render() {
+   // return (
+     // <div className="App">
+       // <Nav/>
+         // <div className="container">
+           // <Main />
+         // </div>
+       // <Footer />
+     // </div>
+   // );
+ // }
+// }
+
 
 export default App;
