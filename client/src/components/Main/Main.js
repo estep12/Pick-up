@@ -13,7 +13,7 @@ class Main extends Component {
         return (
             
             <main>
-                <Header />
+                {/* <Header /> */}
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/newgame' component={Game}/>
