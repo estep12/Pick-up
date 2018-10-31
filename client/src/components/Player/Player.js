@@ -7,23 +7,31 @@ import API from '../../utils/API'
 class Player extends Component {
 
     state = {
-        fName: "",
-        lName: "",
+        firstName: "",
+        lastName: "",
         digits: ""
     }
 
     submitUser = () => {
         API.saveUser({
-            fName: this.state.fname,
-            lName: this.state.lname,
+            firstName: this.state.fname,
+            lastName: this.state.lname,
             digits: this.state.digits,
             user: this.props.userId
         })
         .then(res => this.setState({
-            fName: "",
-            lName: "",
+            firstName: "",
+            lastName: "",
             digits: ""
         }))
+    };
+
+    handleInputChange = event => {
+        const value = event.target.value;
+        const name = event.target.name;
+        this.setState({
+            [name]: value
+        });
     };
 
 
@@ -69,7 +77,7 @@ class Player extends Component {
 
                     <small id="phoneNumberHelp" class="form-text text-muted">For getting the squad together!</small>
                 </div>
-                <button type="submit" onClickclass="btn btn-primary">Add Player</button>
+                <button type="submit" onClick={this.submitUser} class="btn btn-primary">Add Player</button>
             </form>
             </div>
         )
