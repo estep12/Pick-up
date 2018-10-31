@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import Header from '../Header/Header.js'
 import './Player.css';
 import API from '../../utils/API'
 
@@ -29,6 +30,8 @@ class Player extends Component {
 
     render() {
         return (
+            <div>
+            <Header header="Create a Player" />
             <form>
                 <div className="form-group">
                     <label for="firstName">First Name</label>
@@ -68,6 +71,7 @@ class Player extends Component {
                 </div>
                 <button type="submit" onClickclass="btn btn-primary">Add Player</button>
             </form>
+            </div>
         )
     }
 }
