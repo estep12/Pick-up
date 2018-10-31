@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header.js'
 import {
     Route,
     NavLink,
@@ -12,6 +13,7 @@ class Game extends Component {
     render() {
         return (
         <div>
+            <Header header="Start a New Game" />
         <div>
             <h2>Team 1</h2>
                 <div class="btn-group">
