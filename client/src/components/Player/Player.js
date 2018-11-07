@@ -14,8 +14,8 @@ class Player extends Component {
 
     submitUser = () => {
         API.saveUser({
-            firstName: this.state.fname,
-            lastName: this.state.lname,
+            firstName: this.state.firstname,
+            lastName: this.state.lastname,
             digits: this.state.digits,
             user: this.props.userId
         })
@@ -42,10 +42,12 @@ class Player extends Component {
             <Header header="Create a Player" />
             <form>
                 <div className="form-group">
-                    <label for="firstName">First Name</label>
+                    <label htmlFor="firstName">First Name</label>
                     <input
                         type="text"
+                        name="firstName"
                         value={this.state.firstName}
+                        onChange={this.handleInputChange}
                         name="firstName"
                         className="form-control form-control-lg"
                         id="firstName"
@@ -54,10 +56,12 @@ class Player extends Component {
                     />
                 </div>
                 <div className="form-group">
-                    <label for="lastName">Last Name</label>
+                    <label htmlFor="lastName">Last Name</label>
                     <input
                         type="text"
+                        name="lastName"
                         value={this.state.lastName}
+                        onChange={this.handleInputChange}
                         className="form-control form-control-lg"
                         id="lastName"
                         aria-describedby="lastNameInput"
@@ -65,10 +69,12 @@ class Player extends Component {
                     />
                 </div>
                 <div className="form-group">
-                    <label for="phoneNumber">Phone Number</label>
+                    <label htmlFor="phoneNumber">Phone Number</label>
                     <input
                         type="text"
-                        value={this.state.phoneNumber}
+                        name="digits"
+                        value={this.state.digits}
+                        onChange={this.handleInputChange}
                         className="form-control form-control-lg"
                         id="phoneNumber"
                         aria-describedby="phoneNumberHelp"
