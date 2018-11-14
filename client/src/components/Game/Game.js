@@ -7,8 +7,27 @@ import {
   } from "react-router-dom";
 import Home from '../Home/Home.js' 
 import './Game.css';
+import API from '../../utils/API'
 
 class Game extends Component {
+
+state = {
+    players: []
+};
+
+componentDidMount() {
+    this.getUsers()
+};
+
+getUsers = () => {
+    API.getUsers()
+    .then(res  => 
+        this.setState({
+            players: res.data
+        })
+    )
+    .catch(err => console.log(err));
+};
 
     render() {
         return (
@@ -21,7 +40,7 @@ class Game extends Component {
                     Player 1
                     </button>
                         <div class="dropdown-menu">
-                        ...
+                            {this.state.players.length}
                         </div>
                 </div>
                 <div class="btn-group">
@@ -29,7 +48,7 @@ class Game extends Component {
                     Player 2
                     </button>
                         <div class="dropdown-menu">
-                        ...
+                        {this.state.players.length}
                         </div>
                 </div>
                 <div class="btn-group">
@@ -37,7 +56,7 @@ class Game extends Component {
                     Player 3
                     </button>
                         <div class="dropdown-menu">
-                        ...
+                        {this.state.players.length}
                         </div>
                 </div>
                 <div class="btn-group">
@@ -45,7 +64,7 @@ class Game extends Component {
                     Player 4
                     </button>
                         <div class="dropdown-menu">
-                        ...
+                        {this.state.players.length}
                         </div>
                 </div>
                 <div class="btn-group">
@@ -53,7 +72,7 @@ class Game extends Component {
                     Player 5
                     </button>
                         <div class="dropdown-menu">
-                        ...
+                        {this.state.players.length}
                         </div>
                 </div>
         </div>
@@ -65,7 +84,7 @@ class Game extends Component {
                 Player 1
                 </button>
                     <div class="dropdown-menu">
-                    ...
+                    {this.state.players.length}
                     </div>
             </div>
             <div class="btn-group">
@@ -73,7 +92,7 @@ class Game extends Component {
                 Player 2
                 </button>
                     <div class="dropdown-menu">
-                    ...
+                    {this.state.players.length}
                     </div>
             </div>
             <div class="btn-group">
@@ -81,7 +100,7 @@ class Game extends Component {
                 Player 3
                 </button>
                     <div class="dropdown-menu">
-                    ...
+                    {this.state.players.length}
                     </div>
             </div>
             <div class="btn-group">
@@ -89,7 +108,7 @@ class Game extends Component {
                 Player 4
                 </button>
                     <div class="dropdown-menu">
-                    ...
+                    {this.state.players.length}
                     </div>
             </div>
             <div class="btn-group">
@@ -97,7 +116,7 @@ class Game extends Component {
                 Player 5
                 </button>
                     <div class="dropdown-menu">
-                    ...
+                    {this.state.players.length}
                     </div>
             </div>
     </div>
