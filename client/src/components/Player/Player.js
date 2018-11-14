@@ -9,20 +9,23 @@ class Player extends Component {
     state = {
         firstName: "",
         lastName: "",
-        digits: ""
+        userName: "",
+        phoneNumber: ""
     }
 
     submitUser = () => {
         API.saveUser({
-            firstName: this.state.firstname,
-            lastName: this.state.lastname,
-            digits: this.state.digits,
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            userName: this.state.userName,
+            phoneNumber: this.state.phoneNumber,
             user: this.props.userId
         })
         .then(res => this.setState({
             firstName: "",
             lastName: "",
-            digits: ""
+            userName:"",
+            phoneNumber: ""
         }))
     };
 
@@ -40,7 +43,7 @@ class Player extends Component {
         return (
             <div>
             <Header header="Create a Player" />
-            <form>
+            <form method="POST" action="/api/users">
                 <div className="form-group">
                     <label htmlFor="firstName">First Name</label>
                     <input
@@ -69,11 +72,24 @@ class Player extends Component {
                     />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="lastName">Username</label>
+                    <input
+                        type="text"
+                        name="userName"
+                        value={this.state.userName}
+                        onChange={this.handleInputChange}
+                        className="form-control form-control-lg"
+                        id="userName"
+                        aria-describedby="userNameInput"
+                        placeholder=""
+                    />
+                </div>
+                <div className="form-group">
                     <label htmlFor="phoneNumber">Phone Number</label>
                     <input
                         type="text"
-                        name="digits"
-                        value={this.state.digits}
+                        name="phoneNumber"
+                        value={this.state.phoneNumber}
                         onChange={this.handleInputChange}
                         className="form-control form-control-lg"
                         id="phoneNumber"
