@@ -43,7 +43,7 @@ class Player extends Component {
         return (
             <div>
             <Header header="Create a Player" />
-            <form method="POST" action="/api/users">
+            <form method="POST" action="/player">
                 <div className="form-group">
                     <label htmlFor="firstName">First Name</label>
                     <input
