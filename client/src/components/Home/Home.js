@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import './Home.css';
 import Header from '../Header/Header.js'
-import Player from '../Player/Player.js'
-import Game from '../Game/Game.js'
-import Leaderboard from '../Leaderboard/Leaderboard.js'
 
 class Main extends Component {
 
