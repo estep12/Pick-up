@@ -25,7 +25,6 @@ class Game extends Component {
                 this.setState({
                     players: res.data
                 })
-
             )
             .catch(err => console.log(err));
 
@@ -43,13 +42,13 @@ class Game extends Component {
                     </button>
 
                         <div class="dropdown-menu">
-                            {/* <ul>
+                            <ul>
                                 <li>
                                     {this.state.players.map(player=>(
                                         key = { player._id }
                                     ))}
                                 </li>
-                            </ul> */}
+                            </ul>
                         </div>
                     </div>
                     <div class="btn-group">
